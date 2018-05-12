@@ -1,0 +1,91 @@
+/* .characters-container {
+    display: block;
+    clear: both;
+    background-color: royalblue;
+} */
+
+#game {
+    background-color: rgba(0, 0, 0, 0.557);
+    margin: 20px 0;
+    padding: 0 0 40px 0;
+    border-radius: 8px;
+}
+
+#attack-button {
+    width: 100px;
+    height: 44px;
+    margin: auto 0;
+}
+
+.grass-tile {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAWUlEQVR42mPQVFP5D8LebYn/Q9c3gGkQH8QG0QwO8e5gQUMbI7giGBuEGWAMbIpANAPIGJgEMg2zjgHZSJggskIGbLphVoLcB1aAjGGKYGwGmDeRFcHEQBgA9r16IYYKYPwAAAAASUVORK5CYII=);
+}
+
+.dirt-tile {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAS0lEQVR42mPQVFP5j4zbCr3BGMZnQOYgs0E4PtjhPwOIQBa0MTdEoRmwWYHMZ0DXhaxg/ZRQhBUgCZhCZJMY0I1Edw+GG0DGIpsEAOyBaOb1FTsuAAAAAElFTkSuQmCC);
+}
+
+body {
+    /* background-size: cover;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAWUlEQVR42mPQVFP5D8LebYn/Q9c3gGkQH8QG0QwO8e5gQUMbI7giGBuEGWAMbIpANAPIGJgEMg2zjgHZSJggskIGbLphVoLcB1aAjGGKYGwGmDeRFcHEQBgA9r16IYYKYPwAAAAASUVORK5CYII=); */
+}
+
+.title {
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.character {
+    background-color: rgb(69, 208, 255);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+    border-radius: 8px;
+}
+
+.center {
+    display: flex;
+    align-content: center;
+}
+
+.ground {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.flip-image {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+.pixelated { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
