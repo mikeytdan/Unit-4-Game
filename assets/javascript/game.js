@@ -1,4 +1,3 @@
-var game = document.getElementById("game");
 var charactersSection;
 var playerCharacterSection;
 var fightSection;
